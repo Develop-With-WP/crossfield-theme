@@ -1,0 +1,18 @@
+.cta-button {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+
+  & a {
+    background-color: var(--pink);
+    color: var(--white);
+    border-radius: 200px;
+    font-size: 14px;
+    padding: 15px 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700px;
+    letter-spacing: 1px;
+  }
+}

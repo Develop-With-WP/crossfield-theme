@@ -1,0 +1,149 @@
+.blog-post {
+  width: 300px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(0,0,0,.08);
+  margin: 0 auto 15px auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (width >= 768px) {
+    margin: 0 7px 15px 7px;
+  }
+
+  @media (width >= 1024px) {
+    width: 31%;
+  }
+
+  @media (width >= 1100px) {
+    width: 32%;
+  }
+
+  &:hover {
+    & img {
+      transform: scale(1.07);
+    }
+  }
+
+  &-top {
+    position: relative;
+    width: 100%;
+
+    & img {
+      width: 100%;
+      transition: all .7s cubic-bezier(.2,1,.22,1);
+    }
+  }
+
+  &-bottom {
+    padding: 17%;
+    font-family: 'Work Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #999999;
+
+    & h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 0;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+
+      & a {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &-stat {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+
+  &-footer {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #b9b9b9;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    padding: 15px 21px;
+    margin-top: auto;
+
+    & svg {
+      width: 14px;
+      stroke: #888 !important;
+      fill: none;
+      margin-right: 5px;
+
+      & path {
+        stroke: #888 !important;
+      }
+    }
+  }
+
+  &-date {
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+
+  &-excerpt {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  &-category {
+    border-radius: 100px;
+    border: 2px solid var(--white);
+    padding: 2px 8px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: var(--pink);
+      border: 2px solid var(--pink);
+    }
+
+    & a {
+      color: var(--white);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+  }
+}
+
+.blog {
+  background-color: #f9f9f9;
+}
+
+.blog-wrapper {
+  padding: 30px 50px 100px 50px;
+  box-sizing: border-box;
+  max-width: 730px;
+  margin: 0 auto;
+
+  @media (width >= 768px) {
+    padding: 60px 50px 100px 50px;
+  }
+
+  @media (width >= 1024px) {
+    max-width: 1225px;
+    padding: 80px 30px;
+  }
+}
+
+.blog-posts-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}

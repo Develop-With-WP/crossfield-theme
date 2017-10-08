@@ -1,0 +1,140 @@
+.form-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--light-gray);
+
+  @media (width >= 768px) {
+    font-size: 35px;
+  }
+}
+
+.form-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.8;
+  color: var(--light-gray);
+}
+
+.form-group {
+  position: relative;
+  margin: 50px 0;
+  width: 100%;
+}
+
+select,
+input:focus,
+input.form-file,
+input.has-value,
+textarea:focus,
+textarea.form-file,
+textarea.has-value
+textarea.has-value,
+.has-value {
+  color: var(--light-gray);
+
+~ .control-label {
+    font-size: 0.8rem;
+    color: var(--light-gray);
+    top: -1rem;
+    left: 0;
+  }
+}
+
+textarea:invalid,
+input:invalid {
+  color: red;
+}
+
+input,
+textarea {
+  display: block;
+  background: none;
+  font-size: 15px;
+  border-width: 0;
+  border-color: transparent;
+  line-height: 1.5;
+  padding: 0;
+  width: 100%;
+  color: transparent;
+  transition: all 0.5s ease;
+  box-shadow: none;
+
+&:focus {
+   color: var(--light-gray);;
+   font-size: 14px;
+   outline: none;
+
+& ~ .bar:before {
+      width: 100%;
+      left: 0;
+    }
+}
+}
+
+textarea {
+    height: 22px;
+  max-height: 500px;
+
+    &:focus {
+        height: 200px;
+    }
+}
+
+.control-label {
+  position: absolute;
+  top: 0px;
+  pointer-events: none;
+  padding-left: 0.125rem;
+  z-index: 1;
+  color: var(--light-gray);
+  font-size: 13px;
+  font-weight: normal;
+  transition: all 0.28s ease;
+
+  @media (width >= 768px) {
+    font-size: 15px;
+  }
+}
+
+.bar {
+  position: relative;
+  border-bottom: 2px solid var(--light-gray);
+  display: block;
+
+&:before {
+   content: '';
+   height: 2px;
+   width: 0;
+   left: 50%;
+   bottom: -2px;
+   position: absolute;
+   background: var(--pink);
+   transition: left 0.4s ease, width 0.4s ease;
+   z-index: 2;
+ }
+}
+
+input.omg-form-submit-btn {
+    background-color: var(--black);
+    color: var(--white);
+    text-transform: uppercase;
+    border-radius: 100px;
+    padding: 12px 0;
+    width: 100px;
+    transition: 0.3s background-color ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--pink);
+    }
+}
+
+.omg-form-wrapper {
+    margin-top: 100px;
+
+    @media (width >= 768px) {
+        width: 48%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

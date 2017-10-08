@@ -1,0 +1,21 @@
+@import './header.css';
+@import './footer.css';
+@import './base';
+@import './colors';
+
+@import './modules/slider';
+@import './modules/info';
+@import './modules/portfolio';
+@import './modules/clients';
+@import './modules/buttons';
+@import './modules/blog-card';
+@import './modules/home-cta';
+@import './modules/forms';
+@import './modules/social';
+
+@import './templates/homepage';
+@import './templates/portfolio';
+@import './templates/about';
+@import './templates/blog';
+@import './templates/page';
+@import './templates/single';

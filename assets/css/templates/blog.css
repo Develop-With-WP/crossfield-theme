@@ -1,0 +1,19 @@
+.page-template-viewspage-news-php {
+  background-color: #f6f6f6;
+
+  & .blog-posts-wrapper {
+    padding: 30px 50px 100px 50px;
+    box-sizing: border-box;
+    max-width: 730px;
+    margin: 0 auto;
+
+    @media (width >= 768px) {
+      padding: 60px 50px 100px 50px;
+    }
+
+    @media (width >= 1024px) {
+      max-width: 1225px;
+      padding: 80px 30px;
+    }
+  }
+}

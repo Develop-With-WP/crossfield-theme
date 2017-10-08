@@ -1,0 +1,41 @@
+.clients {
+  background-color: var(--white);
+
+  &-logos {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (width >= 768px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &-wrapper {
+    padding: 25px 50px;
+
+    @media (width >= 768px) {
+      padding: 50px;
+    }
+  }
+
+  & .client-logo {
+    width: 50%;
+
+    @media (width >= 768px) {
+      width: 20%;
+    }
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  & p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 6.0px;
+    color: #808080;
+  }
+}

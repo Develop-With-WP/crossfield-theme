@@ -1,0 +1,38 @@
+.portfolio {
+  background-color: #f9f9f9;
+
+  &-wrapper {
+    padding: 30px 50px;
+    max-width: 1225px;
+    margin: 0 auto;
+
+    @media (width >= 768px) {
+      padding: 60px 80px;
+    }
+
+    @media (width >= 1024px) {
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      padding: 80px;
+    }
+  }
+
+  &-item {
+    display: block;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.08), 0 13px 45px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+
+    @media (width >= 1024px) {
+      width: 47%;
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+
+    & img {
+      width: 100%;
+      display: block;
+    }
+  }
+}

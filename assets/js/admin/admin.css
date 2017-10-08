@@ -1,0 +1,46 @@
+.admin-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+
+  & label {
+    width: 20%;
+  }
+
+  & .row-wrapper {
+    width: 80%;
+
+    &-description {
+      font-weight: 800;
+      font-style: italic;
+      margin-bottom: 3px;
+    }
+  }
+
+  & .textarea-wrapper {
+    width: 80%;
+
+    & textarea {
+      width: 100%;
+    }
+  }
+
+  & .taxonomy-select {
+    & select {
+      display: block;
+      width: 50%;
+      margin-bottom: 10px;
+    }
+
+    & input[type=text] {
+      width: 70%;
+    }
+
+    & .taxonomy-select-inputs {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

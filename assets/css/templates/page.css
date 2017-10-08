@@ -1,0 +1,36 @@
+.page {
+  background-color: #f6f6f6;
+
+  & .main-content {
+    padding: 50px;
+
+    & a {
+      color: var(--pink);
+      text-decoration: none;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
+  & h1 {
+    font-size: 35px;
+    line-height: 38px;
+    text-align: center;
+    font-weight: 600px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  & p {
+    font-family: 'Work Sans', sans-serif;
+    line-height: 28px;
+    margin: 0;
+  }
+
+  & .wpcf7-form {
+    margin-top: 80px;
+  }
+}

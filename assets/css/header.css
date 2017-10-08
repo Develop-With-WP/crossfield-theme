@@ -1,0 +1,248 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.22);
+  background-color: var(--white);
+  transition: transform 0.3s ease-in-out;
+  z-index: 10;
+
+  & img {
+    height: 24px;
+
+    @media (width >= 1024px) {
+      height: 40px;
+    }
+
+  }
+
+  @nest .admin-bar & {
+    top: 46px;
+
+    @media (width >= 783px) {
+      top: 32px;
+    }
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -325px;
+    width: 325px;
+    height: 100vh;
+    background-color: var(--pink);
+    flex-direction: column;
+    justify-content: center;
+
+    @media (width >= 768px) {
+      background-color: var(--white);
+      flex-direction: row;
+      position: relative;
+      height: inherit;
+      width: auto;
+      right: 0;
+    }
+
+    & svg {
+      width: 15px;
+      fill: var(--light-gray);
+    }
+
+    & a.header-social-pink {
+      & svg {
+        fill: var(--pink);
+      }
+    }
+
+    & ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      @media (width >= 768px) {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    & li {
+      margin: 0 10px;
+      padding-bottom: 5px;
+    }
+
+    & a {
+      color: var(--light-white);
+      text-transform: uppercase;
+      font-weight: 400;
+      text-decoration: none;
+      position: relative;
+      padding-bottom: 2px;
+      letter-spacing: 3px;
+      font-size: 20px;
+      line-height: 50px;
+      font-family: 'Work Sans', sans-serif;
+      transition: color 0.3s ease-in-out;
+
+      @media (width <= 768px) {
+        &:hover {
+          color: var(--white);
+        }
+      }
+
+      @media (width >= 768px) {
+        color: var(--light-gray);
+        letter-spacing: 2px;
+        font-size: 12px;
+        line-height: 16.8px;
+        font-family: 'Montserrat', sans-serif;
+
+        &:after {
+          transform: scaleX(0);
+          transition: transform 0.3s ease-in-out;
+          position: absolute;
+          display: block;
+          bottom: -6px;
+          left: 0;
+          width: 100%;
+          content: '';
+          background-color: var(--pink);
+          height: 2px;
+        }
+      }
+    }
+  }
+}
+
+#menu-header {
+  @media (width >= 768px) {
+    & .current-menu-item {
+      & a:after {
+        transform: scale(1);
+      }
+    }
+    & li:hover {
+      & a:after {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.header-social {
+  position: absolute;
+  bottom: 10%;
+
+  @media (width >= 768px) {
+    margin-left: 30px;
+    position: relative;
+    bottom: inherit;
+  }
+
+  & ul {
+    display: flex;
+  }
+
+  & svg {
+    width: 16px;
+    height: 18px;
+    fill: var(--light-white);
+    transition: fill 0.3s ease-in-out;
+    cursor: pointer;
+
+    @media (width >= 768px) {
+      fill: var(--light-gray);
+    }
+
+    @media (width <= 768px) {
+      &:hover {
+        fill: var(--white);
+      }
+    }
+
+  }
+
+  &-wrapper {
+    height: 21px;
+
+    @media (width >= 768px) {
+      overflow: hidden;
+
+      &:hover {
+        & a {
+          transform: translateY(-21px);
+        }
+      }
+    }
+  }
+
+  & a {
+    display: block;
+    transition: transform 0.25s ease-in-out;
+  }
+}
+
+.header-wrapper {
+  width: 100%;
+  max-width: 1225px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 18px;
+  box-sizing: border-box;
+
+  @media (width >= 768px) {
+    padding: 26px;
+  }
+}
+
+.header-menu-icon {
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+
+  @media (width >= 768px) {
+    display: none;
+  }
+}
+
+.header-menu-icon span, .header-menu-icon span:before, .header-menu-icon span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 2px;
+  width: 22px;
+  background: var(--mid-gray);
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+.header-menu-icon span:before {
+  top: -6px;
+}
+
+.header-menu-icon span:after {
+  bottom: -6px;
+}
+
+.header-menu-icon span, .header-menu-icon span:before, .header-menu-icon span:after {
+  transition: all 500ms ease-in-out;
+}
+
+.header-menu-icon.active span {
+  background-color: transparent;
+}
+
+.header-menu-icon.active span:before, .header-menu-icon.active span:after {
+  top: 0;
+}
+
+.header-menu-icon.active span:before {
+  transform: rotate(45deg);
+}
+
+.header-menu-icon.active span:after {
+  transform: rotate(-45deg);
+}

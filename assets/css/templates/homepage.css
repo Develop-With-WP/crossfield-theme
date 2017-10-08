@@ -1,0 +1,24 @@
+.section-title {
+  font-size: 35px;
+  line-height: 38px;
+  color: #333300;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  -webkit-font-smoothing: antialiased;
+
+  @media (width >= 768px) {
+    font-size: 42px;
+    line-height: 45px;
+  }
+
+  @media (width >= 1024px) {
+    font-size: 35px;
+    line-height: 38px;
+  }
+
+  @media (width >= 1200px) {
+    font-size: 42px;
+    line-height: 45px;
+  }
+}

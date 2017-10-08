@@ -1,0 +1,17 @@
+.site {
+  margin-top: 59px;
+
+  @media (width >= 768px) {
+    margin-top: 82px;
+  }
+
+  @media (width >= 1024px) {
+    margin-top: 96px;
+  }
+
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}

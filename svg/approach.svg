@@ -1,0 +1,18 @@
+<svg x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+	<path fill="none" stroke-width="2" stroke-miterlimit="10" d="M1,63L23,41" style="stroke-dasharray: 32, 34; stroke-dashoffset: 0;"/>
+	<path fill="none" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="M12,41L23,41L23,52" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"/>
+</g>
+<g>
+	<path fill="none" stroke-width="2" stroke-miterlimit="10" d="M63,63L41,41" style="stroke-dasharray: 32, 34; stroke-dashoffset: 0;"/>
+	<path fill="none" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="M41,52L41,41L52,41" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"/>
+</g>
+<g>
+	<path fill="none" stroke-width="2" stroke-miterlimit="10" d="M63,1L41,23" style="stroke-dasharray: 32, 34; stroke-dashoffset: 0;"/>
+	<path fill="none" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="M52,23L41,23L41,12" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"/>
+</g>
+<g>
+	<path fill="none" stroke-width="2" stroke-miterlimit="10" d="M1,1L23,23" style="stroke-dasharray: 32, 34; stroke-dashoffset: 0;"/>
+	<path fill="none" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="M23,12L23,23L12,23" style="stroke-dasharray: 22, 24; stroke-dashoffset: 0;"/>
+</g>
+</svg>

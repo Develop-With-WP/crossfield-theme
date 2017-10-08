@@ -1,0 +1,41 @@
+.homepage-cta {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &-wrapper {
+    background-color: rgba( 233, 41, 86, 0.95);
+    padding: 28px 0;
+
+    @media (width >= 768px) {
+      padding: 50px 0;
+    }
+
+    @media (width >= 1225px) {
+      padding: 80px 0;
+    }
+  }
+
+  &-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  & h2.section-title {
+    color: var(--white);
+  }
+
+  & a {
+    border: 2px solid var(--white);
+    border-radius: 100px;
+    padding: 13px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 14px;
+  }
+
+}
